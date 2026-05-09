@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Yanis PERSON -- PORTFOLIO</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+                <!-- Nom à gauche -->
+                <a class="navbar-brand" href="#">Yanis PERSON</a>
+                <!-- Bouton responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menu à droite -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="/Docs/YanisPersonCVInf.pdf">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#competences">COMPÉTENCES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projet">PROJETS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#stage">STAGES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#certif">CERTIFICATIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" href="https://www.linkedin.com/in/yanis-person-91341439b/"
+                                target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" href="https://github.com/rubys14" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- PRÉSENTATION -->
+    <div class="presentation container mt-5">
+        <div class="row align-items-start">
+            <div class="col-auto">
+                <img src="/Photo/PERSON_Yanis.jpg" class="photo" width="300px" alt="Yanis PERSON">
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bonjour, je suis <strong>Yanis Person</strong>, étudiant en <strong>BTS
+                                SIO</strong> option <strong>SLAM</strong> en 2ème année.</h5>
+                        <p class="card-text">Passionné par le développement, je souhaite continuer dans cette voie pour
+                            les prochaines années. <br>
+                            C'est pourquoi je recherche activement une <strong>alternance</strong> dans le
+                            développement.<br>
+                            Si vous le souhaitez, consultez mon <strong>CV</strong>, <strong>mes compétences</strong> ou
+                            encore mes <strong>projets réalisés.</strong></p>
+                    </div>
+                </div>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-auto">
+                            <a href="/Docs/YanisPersonCVInf.pdf" target="_blank" class="btn btn-outline-custom">CV</a>
+                            <a href="#competences" class="btn btn-outline-custom">Compétences</a>
+                            <a href="#projet" class="btn btn-outline-custom">Projets</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- COMPÉTENCES -->
+    <section id="competences" class="container mt-5 competences">
+        <h2 class="section-title text-center mb-5">MES COMPÉTENCES</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="competence-card">
+                    <h3 class="competence-card-title">Développement</h3>
+                    <hr class="competence-hr">
+                    <ul class="competence-list">
+                        <li><strong>Langages :</strong> HTML/CSS, PHP, JavaScript, Java, C#, Python, WLangage
+                        </li>
+                        <li><strong>Frameworks / Librairies :</strong> CodeIgniter, Vue.js, Bootstrap, Hibernate
+                        </li>
+                        <li><strong>Bases de données :</strong> MySQL, Conception de schémas relationnels</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="competence-card">
+                    <h3 class="competence-card-title">Cybersécurité</h3>
+                    <hr class="competence-hr">
+                    <ul class="competence-list">
+                        <li><strong>Réglementation :</strong> CNIL et RGPD (données à caractère personnel,
+                            données sensibles...)</li>
+                        <li><strong>Principes fondamentaux :</strong> Confidentialité / Intégrité /
+                            Disponibilité (CIA)</li>
+                        <li><strong>Gestion des risques :</strong> Identification des menaces et vulnérabilités
+                        </li>
+                        <li><strong>Types d'attaques :</strong> Phishing, injection SQL, XSS...</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="competence-card">
+                    <h3 class="competence-card-title">Outils</h3>
+                    <hr class="competence-hr">
+                    <ul class="competence-list">
+                        <li><strong>Développement :</strong> Visual Studio Code, Visual Studio 2022, Eclipse,
+                            WinDev</li>
+                        <li><strong>Cybersécurité :</strong> Oracle VirtualBox, Linux (Ubuntu)</li>
+                        <li><strong>Bases de données & Modélisation :</strong> phpMyAdmin, Adminer, PowerAMC
+                        </li>
+                        <li><strong>Contrôle de version :</strong> GitHub, Git</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- PROJETS -->
+    <section id="projet" class="container mt-5 projets">
+        <h2 class="section-title text-center mb-5">MES PROJETS</h2>
+        <!-- Boutons type de projets -->
+        <div class="text-center mb-5">
+            <button class="btn btn-outline-custom me-3 btn-categorie active-categorie"
+                onclick="afficherCategorie('scolaire')">Projets scolaires</button>
+            <button class="btn btn-outline-custom btn-categorie" onclick="afficherCategorie('personnel')">Projets
+                personnels</button>
+        </div>
+        <!-- Projets scolaires -->
+        <div id="cat-scolaire" class="row g-4 categorie-projets">
+            <div class="col-md-4">
+                <div class="projet-card">
+                    <div class="projet-card-img">
+                        <img src="./Photo/logoGSB.png" alt="GSB Frais">
+                    </div>
+                    <h3 class="projet-card-title">GSB-Frais</h3>
+                    <p class="projet-card-desc">Application web de gestion des frais, développée en PHP avec
+                        CodeIgniter.</p>
+                    <div class="projet-card-btns">
+                        <a href="/Docs/DocumentationUtilisateurGSBFrais.pdf" class="btn btn-outline-custom btn-sm"
+                            target="_blank">Doc Utilisateur</a>
+                        <a href="/Docs/DocumentationTechniqueGSBFrais.pdf" class="btn btn-outline-custom btn-sm"
+                            target="_blank">Doc Technique</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="projet-card">
+                    <div class="projet-card-img">
+                        <img src="./Photo/logoGSB.png" alt="GSB RH">
+                    </div>
+                    <h3 class="projet-card-title">GSB RH</h3>
+                    <p class="projet-card-desc">Application Java client lourd — gestion RH et statistiques de frais
+                        pour GSB.</p>
+                    <div class="projet-card-btns">
+                        <a href="/Docs/DocutilisateurGSBRH.pdf" class="btn btn-outline-custom btn-sm"
+                            target="_blank">Doc Utilisateur</a>
+                        <a href="/Docs/DocumentationTechniqueGSBRH.pdf" class="btn btn-outline-custom btn-sm"
+                            target="_blank">Doc Technique</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="projet-card">
+                    <div class="projet-card-img">
+                        <img src="./Photo/GalacticosIT.png" alt="b1projet">
+                    </div>
+                    <h3 class="projet-card-title">GalacticosIT</h3>
+                    <p class="projet-card-desc">Application web permettant de gérer un parc informatique</p>
+                    <div class="projet-card-btns">
+                        <a href="https://docs.google.com/document/d/19n0IVjVMyXmfhvVrLxT0069PSS8NJQdE0RGDxVonbgw/edit?tab=t.0#heading=h.aczyuw2yex2w"
+                            class="btn btn-outline-custom btn-sm" target="_blank">Doc Utilisateur</a>
+                        <a href="https://docs.google.com/document/d/1ZlQDFTB3N_imTc1behC-hS5qL-Dr0dFbpGRnJg7uYAw/edit?tab=t.0#heading=h.aczyuw2yex2w"
+                            class="btn btn-outline-custom btn-sm" target="_blank">Doc Technique</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="projet-card">
+                    <div class="projet-card-img">
+                        <img src="/Photo/totp.png" alt="totp">
+                    </div>
+                    <h3 class="projet-card-title">TOTP</h3>
+                    <p class="projet-card-desc">Implémentation d'un système d'authentification à double facteur basé
+                        sur le protocole TOTP.</p>
+                    <div class="projet-card-btns">
+                        <a href="/Docs/DocUtilisateurTOTPCYBERSÉCURITÉ.pdf" class="btn btn-outline-custom btn-sm"
+                            target="_blank">Doc Utilisateur</a>
+                        <a href="/Docs/DocTechniqueTOTPCYBERSÉCURITÉ.pdf" class="btn btn-outline-custom btn-sm"
+                            target="_blank">Doc Technique</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="projet-card">
+                    <div class="projet-card-img">
+                        <img src="./Photo/logoSALAC.png" alt="salac">
+                    </div>
+                    <h3 class="projet-card-title">SALAC</h3>
+                    <p class="projet-card-desc">Site permettant de consulter des résidences et leurs logements</p>
+                    <div class="projet-card-btns">
+                        <a href="/Docs/DocumentationUtilisateurSALAC.pdf" class="btn btn-outline-custom btn-sm"
+                            target="_blank">Doc Utilisateur</a>
+                        <a href="/Docs/DocumentationTechniqueSALAC.pdf" class="btn btn-outline-custom btn-sm"
+                            target="_blank">Doc Technique</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projets personnels -->
+        <div id="cat-personnel" class="row g-4 categorie-projets" style="display: none !important;">
+            <div class="col-md-4 mx-auto">
+                <div class="projet-card">
+                    <div class="projet-card-img">
+                        <img src="./Photo/PERSON_Yanis.jpg" alt="portfolio">
+                    </div>
+                    <h3 class="projet-card-title">Portfolio</h3>
+                    <p class="projet-card-desc">Portfolio personnel développé en HTML, CSS et Bootstrap, présentant
+                        mes compétences et projets réalisés durant ma formation.</p>
+                    <div class="projet-card-btns">
+                        <a href="LIEN_GOOGLE_DOC" target="_blank" class="btn btn-outline-custom btn-sm">Doc
+                            technique</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- STAGES -->
+    <section id="stage" class="container mt-5 stages">
+        <h2 class="section-title text-center mb-5">MES STAGES</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="stage-card">
+                    <div class="stage-card-img">
+                        <img src="./Photo/Logo_Laïta.jpg" alt="Stage 1">
+                    </div>
+                    <div class="stage-card-content">
+                        <h3 class="stage-card-title">Laïta Ouest-Élevage</h3>
+                        <p class="stage-card-desc">Conception et création d'une application mobile permettant de
+                            collecter des données sur des veaux, exploitées par les éleveurs</p>
+                        <div class="stage-card-btns">
+                            <a href="https://docs.google.com/document/d/13KKfWbvxTl5X1VXi7kNJ9NlpoWROODmpgJdktrGD1Ag/edit?tab=t.0#heading=h.aczyuw2yex2w"
+                                class="btn btn-outline-custom btn-sm" target="_blank">Rapport de stage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="stage-card">
+                    <div class="stage-card-img">
+                        <img src="./Photo/Logo Cleusmeur.png" alt="Stage 2">
+                    </div>
+                    <div class="stage-card-content">
+                        <h3 class="stage-card-title">Lycée Le Cleusmeur</h3>
+                        <p class="stage-card-desc">Création d'un formulaire pour gérer les ordres de mission et les
+                            notes de frais</p>
+                        <div class="stage-card-btns">
+                            <a href="/Docs/RapportdestageLycéeLeCleusmeur.pdf" class="btn btn-outline-custom btn-sm"
+                                target="_blank">Rapport de stage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CERTIFICATIONS -->
+    <section id="certif" class="container mt-5 certifs">
+        <h2 class="section-title text-center mb-5">MES CERTIFICATIONS</h2>
+        <div class="row g-4">
+            <div class="col-md-6 mx-auto">
+                <div class="certif-card">
+                    <div class="certif-card-img">
+                        <img src="/Photo/atelierRGPD.png" alt="Atelier RGPD">
+                    </div>
+                    <div class="certif-card-content">
+                        <h3 class="certif-card-title">Atelier RGPD</h3>
+                        <p class="certif-card-desc">Certifications en cours sur les bases de la cybersécurité</p>
+                        <div class="certif-card-btns">
+                            <!-- <a href="#" class="btn btn-outline-custom btn-sm" target="_blank">Doc Technique</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container mt-5 mb-5">
+        <h2 class="section-title text-center mb-5">ME CONTACTER</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="contact-card">
+                    <div id="contact-success" class="contact-success" style="display:none;">
+                        Message envoyé avec succès !
+                    </div>
+                    <div id="contact-error" class="contact-error" style="display:none;">
+                        Une erreur est survenue, réessayez.
+                    </div>
+                    <div class="mb-4">
+                        <label class="contact-label">Nom</label>
+                        <input type="text" id="nom" class="contact-input" placeholder="Votre nom" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="contact-label">Email</label>
+                        <input type="email" id="email" class="contact-input" placeholder="Votre email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="contact-label">Message</label>
+                        <textarea id="message" class="contact-input contact-textarea" placeholder="Votre message"
+                            required></textarea>
+                    </div>
+                    <div class="text-end">
+                        <button onclick="envoyerMessage()" class="btn btn-outline-custom">Envoyer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p class="footer-name">Yanis PERSON</p>
+            <p class="footer-sub">Étudiant BTS SIO SLAM — 2ème année</p>
+            <div class="footer-links">
+                <a href="/Docs/YanisPersonCVInf.pdf" target="_blank" class="footer-link">CV</a>
+                <a href="#competences" class="footer-link">COMPÉTENCES</a>
+                <a href="#projet" class="footer-link">PROJETS</a>
+                <a href="#stage" class="footer-link">STAGES</a>
+                <a href="#certif" class="footer-link">CERTIFICATIONS</a>
+                <a href="#contact" class="footer-link">CONTACT</a>
+            </div>
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/yanis-person-91341439b/" target="_blank" class="footer-icon"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/rubys14" target="_blank" class="footer-icon"><i
+                        class="fab fa-github"></i></a>
+            </div>
+            <p class="footer-copy">© 2026 Yanis PERSON — Tous droits réservés</p>
+        </div>
+
+    </footer>
+
+    <!-- Script bouton type de projet -->
+    <script>
+        function afficherCategorie(categorie) {
+            document.querySelectorAll('.categorie-projets').forEach(el => {
+                el.style.display = 'none';
+            });
+
+            document.querySelectorAll('.btn-categorie').forEach(btn => {
+                btn.classList.remove('active-categorie');
+            });
+
+            document.getElementById('cat-' + categorie).style.display = 'flex';
+            event.target.classList.add('active-categorie');
+        }
+
+        // Script envoie d'un mail
+
+        emailjs.init("nn4zi3BtzbTuGx-Vb");
+
+        function envoyerMessage() {
+            const nom = document.getElementById('nom').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!nom || !email || !message) {
+                alert("Veuillez remplir tous les champs.");
+                return;
+            }
+
+            if (!emailRegex.test(email)) {
+                alert("Veuillez entrer une adresse email valide.");
+                return;
+            }
+
+            emailjs.send("service_uzc7qg4", "template_0odnlcq", {
+                from_name: nom,
+                from_email: email,
+                message: message
+            }).then(function () {
+                document.getElementById('contact-success').style.display = 'block';
+                document.getElementById('contact-error').style.display = 'none';
+                document.getElementById('nom').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+            }, function () {
+                document.getElementById('contact-error').style.display = 'block';
+                document.getElementById('contact-success').style.display = 'none';
+            });
+        }
+    </script>
+</body>
+
+</html>
